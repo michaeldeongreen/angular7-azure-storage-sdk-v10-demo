@@ -1,0 +1,13 @@
+<div style="text-align:center">
+  <h1>
+    Please upload a file!
+  </h1>
+</div>
+<input type="file" (change)="onFileChange($event)">
+<div *ngIf="UploadStarted">
+  <h2>Upload In Progress...</h2> 
+  <pre>{{UploadProgress | async}}%</pre>
+</div>
+<div *ngIf="UploadCompleted">
+  <h2>Upload Complete!</h2> 
+</div>
