@@ -11,5 +11,5 @@ This project demonstrates how to use the [Azure Storage SDK v10 for JavaScript L
 
 ## Tutorial
 I have written two blog entries detailing how the code in this repository works.  You can find the blog entries below:
-* [Hhow to upload files to Azure Storage using Angular 7 and the Azure Storage SDK v10 for JavaScript Library](https://blog.michaeldeongreen.com/post/how-to-upload-files-to-azure-storage-using-angular-7-and-the-azure-storage-sdk-v10-for-javascript-library)
+* [How to upload files to Azure Storage using Angular 7 and the Azure Storage SDK v10 for JavaScript Library](https://blog.michaeldeongreen.com/post/how-to-upload-files-to-azure-storage-using-angular-7-and-the-azure-storage-sdk-v10-for-javascript-library)
 * [How to set HTTP Headers when uploading files using Angular 7 and the Azure Storage SDK v10 for JavaScript Library](https://blog.michaeldeongreen.com/post/how-to-set-http-headers-when-uploading-files-using-angular-7-and-the-azure-storage-sdk-v10-for-javascript-library)
