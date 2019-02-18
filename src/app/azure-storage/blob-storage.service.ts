@@ -12,6 +12,7 @@ import {
 } from '@azure/storage-blob';
 import { TransferProgressEvent } from '@azure/ms-rest-js';
 import { BehaviorSubject } from 'rxjs';
+import { ClientRequestIDPolicyFactory } from './client-request-idpolicy-factory';
 
 @Injectable({
   providedIn: 'root'
@@ -25,6 +26,7 @@ export class BlobStorageService {
   public async uploadBlobToStorage (file: File): Promise<BlobUploadCommonResponse> {
     const anonymousCredential = new AnonymousCredential();
     const pipeline = StorageURL.newPipeline(anonymousCredential);
+    pipeline.factories.unshift(new ClientRequestIDPolicyFactory('dba75b71-a943-4532-86be-07f86b1e78f0'));
     const serviceURL = new ServiceURL(
       `BLOB SERVICE SAS URL`,
       pipeline
